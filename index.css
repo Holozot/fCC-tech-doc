@@ -1,4 +1,3 @@
-
 body{
   font-family: "Arial", sans-serif;
   font-weight: normal;
@@ -16,7 +15,7 @@ body{
   left:0;
   width: 300px;
   border:1px solid grey;
-  border-right: solid;
+  border-bottom: none;
 }
 
 #navbar header{
@@ -24,8 +23,9 @@ body{
   font-weight: bold;
   margin: 10px 0;
   margin-bottom : 50px;
-  border:1px solid grey;
+  border: 1px solid grey;
   color: black;
+  border-right: solid;
 }
 #main-doc header {
   text-align: left;
@@ -33,16 +33,17 @@ body{
 }
 #navbar a{
   display: block;
-  border:1px solid grey;
+  border: 1px solid grey;
   font-size: 16px;
   padding: 10px 30px;
-  color:#444749; 
+  color:#444749;
 }
 #navbar ul {
-  height: 88%;
+  height: 100%;;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
+  border-right: 1px solid grey;
 }
 #main-doc {
   position: absolute;
@@ -50,7 +51,7 @@ body{
   padding: 20px;
   margin-bottom: 110px;
 }
-#navbar li {
+#navbar ul li {
   color: #444749;
   border-top: 1px solid;
   list-style: none;
@@ -73,26 +74,7 @@ section li {
     border: 1px solid;
     height: 207px;
   }
-    #navbar {
-        background-color: white;
-    position: relative;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin-top: 0;
-    max-height: 500px;
-    border: none;
-    z-index:1;
-    border-bottom: 2px solid;
-    }
-
-#main-doc{
-  margin-left: 0px;
-  top: 50px;
-  margin-top: 50px;
-}
-}
+} /*close the media query to make sure the header and the code styling takes effect even in the expanded view*/
 header{
   font-size: 25px;
   font-weight: bold;
